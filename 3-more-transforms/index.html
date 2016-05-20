@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>shapes and bits</title>
+	<style type="text/css">
+
+	div{
+		border: 1px solid black;
+		border-radius: 20px;
+		font-size: 30px;
+		width: 30%;
+		display: block;
+		margin: auto;
+		text-align: center;
+	}
+		#box{
+		}
+		#trans{
+			margin-left: 20%;
+		}
+		#rotated{
+			transform: rotate(45deg);	/*clockwise*/
+			/*	transform: rotate(-45deg);	*//*anti-clockwise*/
+			position: relative;
+			margin-top: 150px;
+		}
+		#scaled{
+			transform: scale(2, 2);	
+			margin-top: 80px;
+			border: 3px solid black;
+		}
+		#skewed{
+			transform: skew(0deg,	20deg);
+			margin-top: 100px;
+		}
+
+		div:hover{
+		background-color: red;
+		transition:	background-color	10s;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div id="box"><p>im and box</p></div>
+	<div id="trans"><p>im translated</p></div>
+	<div id="rotated"><p>im rotated</p></div>
+	<div id="scaled"><p>im scaled</p></div>
+	<div id="skewed"><p>im skewed</p></div>
+</body>
+</html>
